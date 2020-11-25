@@ -1,0 +1,5 @@
+[Cisco_Router]
+show run --> $output_run
+
+[Python]
+print(output_run)
