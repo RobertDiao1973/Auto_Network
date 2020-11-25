@@ -1,4 +1,10 @@
+[Python]
+login_pass='cisco'
+enable_pass='test'
+
 [Cisco_Router]
+login_pass 
+enable_pass
 show run --> $output_run
 
 [Python]
