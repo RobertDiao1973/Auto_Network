@@ -3,6 +3,8 @@ Description:
    ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
    ...==:    means waiting for a specific string show up.  For example:  '...== abcdef',  waiting 'abcdef' shows up. Otherwises, error reports 
 '''
+
+
 [Cisco_ASA: Router_1]
 enable     ...== cisco_asa>                        ## After enter "enable",   waiting "cisco_asa>" show up
 test       ...== cisco_asa#                        ## After enter "enable",   waiting "cisco_asa#" show up
@@ -12,6 +14,8 @@ ip address 203.82.123.115 255.255.255.0            ## set IP address for the int
 route outside 0.0.0.0 0.0.0.0 208.81.123.254 1     ## add default gateway on cisco asa
 interface BVI1                                     ## configure LAN Interface
 ip address 172.16.200.1 255.255.255.0            ## set IP address for the interface
+write
+... 10
 
 [Ubunt_Host: Host_1]
 ifconfig ens192 172.16.200.10/24
