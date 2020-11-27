@@ -1,3 +1,8 @@
+'''
+Description:
+   ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
+   ...==:    means waiting for a specific string show up.  For example:  '...== abcdef',  waiting 'abcdef' shows up. Otherwises, error reports 
+'''
 [Cisco_ASA: Router_1]
 enable     ...== cisco_asa>                        ## After enter "enable",   waiting "cisco_asa>" show up
 test       ...== cisco_asa#                        ## After enter "enable",   waiting "cisco_asa#" show up
