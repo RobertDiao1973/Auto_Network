@@ -1,7 +1,11 @@
 '''
 Description:
+   This is an example with purge automation script langue to develop program
+   
+Format:
    ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
    ...==:    means waiting for a specific string show up.  For example:  '...== abcdef',  waiting 'abcdef' shows up. Otherwises, error reports 
+   
 '''
 
 
