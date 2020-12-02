@@ -1,6 +1,6 @@
 '''
 Description:
-   This is an example  to embed automation language into python 
+   This  example is to demo how the automation language can be embeded  into python 
    
 Format:
    ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
