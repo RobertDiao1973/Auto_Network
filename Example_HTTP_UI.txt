@@ -17,6 +17,7 @@ login_button.click()    ...==  [Welcome to Home Box,10]  ## After click login bu
 
 tab_firewall.click()    ...==  Firewall                  ## After click tab of Firewall,   waiting "Firewall" in http page
 dst_addr.input(www.game.com)
+action.input(drop)
 save_button.click()
 
 
