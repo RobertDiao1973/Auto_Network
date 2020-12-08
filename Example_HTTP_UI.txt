@@ -1,0 +1,25 @@
+'''
+Description:
+   This is an example with pure automation script langue
+   
+Format:
+   ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
+   ...==:    means waiting for a specific string show up.  For example:  '...== abcdef',  waiting 'abcdef' shows up. Otherwises, error reports 
+   
+'''
+
+
+[Router_UI: Router_1]
+browser.open(https://192.168.0.1)
+username.input(admin)
+password.input(test)
+login_button.click()    ...==  [Welcome to Home Box,10]  ## After click login button, waiting "Welcome to Home Box" in http page in 10 seconds
+
+tab_firewall.click()    ...==  Firewall                  ## After click tab of Firewall,   waiting "Firewall" in http page
+dst_addr.input(www.game.com)
+save_button.click()
+
+
+[Ubunt_Host: Host_1]
+ping 8.8.8.8 -c 3            ...==  Reply from 8.8.8.8           ## testing ping cisco ASA
+ping www.game.com -c 3       ...==  100% packet loss             ## test ping 8.8.8.8
