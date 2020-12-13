@@ -8,7 +8,6 @@ Format:
    
 '''
 
-
 [Router_UI: Router_1]
 browser.open("https://192.168.0.1")
 username.input("admin")
