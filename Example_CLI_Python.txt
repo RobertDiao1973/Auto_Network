@@ -8,8 +8,11 @@ Format:
    ...->:    means output to a variable
 '''
 
-[Python]
+[Var]       # Define global level varible
 enable_pass='test'
+ping_result =''
+
+[Python]
 loop_idx=1
 
 while True:
