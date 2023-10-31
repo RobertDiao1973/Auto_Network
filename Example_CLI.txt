@@ -1,6 +1,6 @@
 '''
 Description:
-   This is an example with purge automation script langue to develop program
+   This is an example with pure automation script langue to develop program
    
 Format:
    ...:      means waiting.  For example:  '...  3',  waiting 3 seconds   
