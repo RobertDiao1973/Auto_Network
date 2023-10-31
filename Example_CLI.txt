@@ -11,7 +11,7 @@ Format:
 
 [Cisco_ASA: Router_1]
 enable     ...== "cisco_asa>"                        ## After enter "enable",   waiting "cisco_asa>" show up
-test       ...== "cisco_asa#"                        ## After enter "enable",   waiting "cisco_asa#" show up
+test       ...== "cisco_asa#"                        ## After enter password of "test",   waiting "cisco_asa#" show up
 config t   ...== "cisco_asa(config)#"                ## After enter "config t", waiting "cisco_asa(config)#" show up
 interface GigabitEthernet1/1                       ## configure WAN Interface
 ip address 203.82.123.115 255.255.255.0            ## set IP address for the interface
